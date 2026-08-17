@@ -1,0 +1,224 @@
+/* Header */
+
+header {
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+}
+
+#home header {
+    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 700px;
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+}
+
+
+/* Logo */
+
+.navbar-brand img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Navigation */
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav .nav-item {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link {
+    padding: 40px 25px !important;
+    color: #888 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #9ed034 !important;
+}
+
+.navbar-nav .active {
+    background: #9ed034;
+}
+
+.navbar-nav .active .nav-link {
+    color: #fff !important;
+}
+
+
+/* Main */
+
+main {
+    padding: 3em 6em 3em 5.5em;
+    margin: 2em 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h1 {
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+    color: #9ed034;
+}
+
+main h2 {
+    font-size: 1.7em;
+}
+
+
+/* Partners */
+
+section {
+    width: 100%;
+    background-color: #4288C3;
+}
+
+section #partners {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2em 0;
+    margin: 0 auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+section #partners .partner {
+    margin: 0;
+    padding: 1em;
+    background-color: transparent;
+}
+
+section #partners .partner img {
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    min-height: 155px;
+    padding-bottom: 1em;
+    background-color: #ecfab8;
+}
+
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em;
+}
+
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    margin-right: 9.25em;
+    float: right;
+}
+
+footer #disclaimer {
+    clear: both;
+}
+
+footer #disclaimer p {
+    font-size: 0.85em;
+    text-align: center;
+}
+
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+
+footer #nondisclaimer .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+footer #nondisclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0 1em 0;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+    }
+
+    footer #nondisclaimer .social {
+        padding: 1em 0;
+        margin: 0;
+        text-align: center;
+        float: none;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+
+    .main-header {
+        width: 90%;
+    }
+
+    .navbar-brand img {
+        position: relative;
+        bottom: 8px;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 200px;
+        z-index: 10;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 15px 25px !important;
+    }
+
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+    }
+
+    main {
+        padding: 3em 1em;
+        margin: 0;
+    }
+
+}
