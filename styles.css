@@ -1,21 +1,25 @@
+/* Body Background */
+
+#home {
+    background: no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 100% 400px;
+}
+
+
 /* Header */
 
 header {
     width: 100%;
-    min-height: 400px;
-    padding-top: 3em;
+    min-height: 275px;
 }
 
-#home header {
-    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: cover;
-    background-position: center;
-}
+
+/* Main Header */
 
 .main-header {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(38, 41, 61, 0.7);
     width: 700px;
-    margin: 2em auto 0 auto;
+    margin: 0 auto;
     min-height: 100px;
 }
 
@@ -41,7 +45,7 @@ header {
 
 .navbar-nav .nav-link {
     padding: 40px 25px !important;
-    color: #888 !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -63,6 +67,7 @@ main {
     padding: 3em 6em 3em 5.5em;
     margin: 2em 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
 }
 
 main h1 {
@@ -167,26 +172,7 @@ footer #nondisclaimer .social .fa-instagram {
 }
 
 
-/* Media Queries */
-
-@media (max-width: 768px) {
-
-    footer #nondisclaimer .copy {
-        padding: 3.5em 0 1em 0;
-        text-align: center;
-        float: none;
-        font-size: 0.9em;
-    }
-
-    footer #nondisclaimer .social {
-        padding: 1em 0;
-        margin: 0;
-        text-align: center;
-        float: none;
-    }
-
-}
-
+/* Tablet and Mobile */
 
 @media (max-width: 992px) {
 
@@ -200,7 +186,7 @@ footer #nondisclaimer .social .fa-instagram {
     }
 
     .navbar-collapse {
-        background-color: white;
+        background-color: rgba(38, 41, 61, 0.9);
         position: absolute;
         top: 100px;
         right: 0;
@@ -219,6 +205,27 @@ footer #nondisclaimer .social .fa-instagram {
     main {
         padding: 3em 1em;
         margin: 0;
+    }
+
+}
+
+
+/* Smaller Screens */
+
+@media (max-width: 768px) {
+
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0 1em 0;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+    }
+
+    footer #nondisclaimer .social {
+        padding: 1em 0;
+        margin: 0;
+        text-align: center;
+        float: none;
     }
 
 }
