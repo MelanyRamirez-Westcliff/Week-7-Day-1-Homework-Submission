@@ -1,152 +1,200 @@
 <!doctype html>
-<html>
-  <head>
-    <title>Activities</title>
-    <meta charset="utf-8" />
+<html lang="en">
+<head>
+  <title>Activities - Melany</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  >
 
-  <body id="activities">
-    <div id="container">
-      <header>
-        <div class="main-header">
-          <div class="logo">
-            <img src="images/logo.png" alt="Great Cliffs Logo" />
-          </div>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
 
-          <nav class="main-menu">
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-              </li>
+<body id="activities">
 
-              <li>
-                <a href="cliffs.html">Cliffs</a>
-              </li>
+  <!-- Navigation -->
+  <div class="main-header sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-dark">
 
-              <li class="active">
-                <a href="activities.html">Activities</a>
-              </li>
+      <a class="navbar-brand" href="index.html">
+        <img src="../images/logo.png" alt="Great Cliffs Logo">
+      </a>
 
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <main>
-        <h1>Activities</h1>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
 
-        <p>
-          There are many planned activities at all the cliff sites. Some are
-          scheduled daily, weekly, monthly and yearly. These activities are not
-          however run by the state park and recreational department. They are
-          operated and manage by private vendors but are partners with the state
-          department. Therefore, for schedule inquiries or information, please
-          contact them directly. For a list of activities, please refer to the
-          table below:
-        </p>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
 
-        <table>
-          <caption>
-            Activities at the Cliffs
-          </caption>
+          <li class="nav-item">
+            <a class="nav-link" href="cliffs.html">Cliffs</a>
+          </li>
 
-          <thead>
-            <tr>
-              <th>Activity</th>
-              <th>West Cliff</th>
-              <th>North Cliff</th>
-              <th>East Cliff</th>
-              <th>South Cliff</th>
-            </tr>
-          </thead>
+          <li class="nav-item active">
+            <a class="nav-link" href="Activities.html">Activities</a>
+          </li>
 
-          <tbody>
-            <tr>
-              <td>Hiking</td>
-              <td>College Hikes</td>
-              <td>Family Fun</td>
-              <td>Treasure Trails</td>
-              <td>Canyon Explorer</td>
-            </tr>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
 
-            <tr>
-              <td>Kayak</td>
-              <td>Western Kayak Meetup</td>
-              <td>Not Available</td>
-              <td>Youth Kayaking</td>
-              <td>Kayak Down</td>
-            </tr>
+        </ul>
+      </div>
 
-            <tr>
-              <td>Skydiving</td>
-              <td>Seacliff Diving</td>
-              <td>Sky is the limit</td>
-              <td>Not Available</td>
-              <td>Sky Diving for Beginners</td>
-            </tr>
+    </nav>
+  </div>
 
-            <tr>
-              <td>Biking</td>
-              <td>Bicycle for One</td>
-              <td>Not Available</td>
-              <td>Bike Meetup Group</td>
-              <td>Not Available</td>
-            </tr>
+  <div id="container">
 
-            <tr>
-              <td>Camping</td>
-              <td>Youth Camp</td>
-              <td>Rent a Tent</td>
-              <td>Campground Adventure</td>
-              <td>Sunset Camping</td>
-            </tr>
-          </tbody>
-        </table>
-      </main>
+    <!-- Empty Header -->
+    <header></header>
 
-      <section>
-        <ul id="partners"></ul>
-      </section>
+    <main>
 
-      <footer>
-        <div id="nondisclaimer">
-          <div class="copy">&copy; Copyright 2020 :: GreatCliffs.com</div>
+      <h1>Activities</h1>
 
-          <div class="social">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-          </div>
-        </div>
+      <p>
+        There are many planned activities at all the cliff sites. Some are
+        scheduled daily, weekly, monthly and yearly. These activities are not
+        however run by the state park and recreational department. They are
+        operated and manage by private vendors but are partners with the state
+        department. Therefore, for schedule inquiries or information, please
+        contact them directly. For a list of activities, please refer to the
+        table below:
+      </p>
 
-        <div id="disclaimer">
-          <p>
-            This website is designed and created solely for educational purposes
-            only at Westcliff University. All contents are not intended for any
-            commercial gain or use.
-          </p>
-        </div>
-      </footer>
-    </div>
+      <table>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <caption>
+          Activities at the Cliffs
+        </caption>
+
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>West Cliff</th>
+            <th>North Cliff</th>
+            <th>East Cliff</th>
+            <th>South Cliff</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Hiking</td>
+            <td>College Hikes</td>
+            <td>Family Fun</td>
+            <td>Treasure Trails</td>
+            <td>Canyon Explorer</td>
+          </tr>
+
+          <tr>
+            <td>Kayak</td>
+            <td>Western Kayak Meetup</td>
+            <td>Not Available</td>
+            <td>Youth Kayaking</td>
+            <td>Kayak Down</td>
+          </tr>
+
+          <tr>
+            <td>Skydiving</td>
+            <td>Seacliff Diving</td>
+            <td>Sky is the Limit</td>
+            <td>Not Available</td>
+            <td>Sky Diving for Beginners</td>
+          </tr>
+
+          <tr>
+            <td>Biking</td>
+            <td>Bicycle for One</td>
+            <td>Not Available</td>
+            <td>Bike Meetup Group</td>
+            <td>Not Available</td>
+          </tr>
+
+          <tr>
+            <td>Camping</td>
+            <td>Youth Camp</td>
+            <td>Rent a Tent</td>
+            <td>Campground Adventure</td>
+            <td>Sunset Camping</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </main>
 
     <!-- Partners -->
-    <script src="js/site_scripts.js"></script>
+    <section id="partners-section">
+      <ul id="partners" class="row"></ul>
+    </section>
 
-    <!-- Activities -->
-    <script src="js/activity.js"></script>
-  </body>
+    <footer>
+
+      <div id="nondisclaimer">
+
+        <div class="copy">
+          &copy; Copyright 2020 :: GreatCliffs.com
+        </div>
+
+        <div class="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+
+      </div>
+
+      <div id="disclaimer">
+        <p>
+          This website is designed and created solely for educational purposes
+          only at Westcliff University. All contents are not intended for any
+          commercial gain or use.
+        </p>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Partners -->
+  <script src="../js/site_scripts.js"></script>
+
+  <!-- Activities -->
+  <script src="../js/activity.js"></script>
+
+</body>
 </html>

@@ -1,231 +1,548 @@
-/* Body Background */
+/* ================================
+   GENERAL
+================================ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  width: 100%;
+}
+
+
+/* ================================
+   PAGE BACKGROUNDS
+================================ */
 
 #home {
-    background: no-repeat white url(images/cliff_ocean.jpg);
-    background-size: 100% 400px;
+  background: no-repeat white url("images/cliff_ocean.jpg");
+  background-size: 100% 400px;
+}
+
+#cliffs {
+  background: no-repeat white url("images/cliff_rock.jpg");
+  background-size: 100% 400px;
+}
+
+#activities {
+  background: no-repeat white url("images/runfly.jpg");
+  background-size: 100% 400px;
+}
+
+#contact {
+  background: no-repeat white url("images/forest_cliff.jpg");
+  background-size: 100% 400px;
 }
 
 
-/* Header */
+/* ================================
+   HEADER
+================================ */
 
 header {
-    width: 100%;
-    min-height: 275px;
+  width: 100%;
+  min-height: 275px;
 }
 
 
-/* Main Header */
+/* ================================
+   NAVIGATION
+================================ */
 
 .main-header {
-    background-color: rgba(38, 41, 61, 0.7);
-    width: 700px;
-    margin: 0 auto;
-    min-height: 100px;
+  width: 700px;
+  min-height: 100px;
+  margin: 0 auto;
+
+  background-color: rgba(38, 41, 61, 0.7);
+
+  z-index: 1000;
 }
-
-
-/* Logo */
-
-.navbar-brand img {
-    width: 100px;
-    height: 100px;
-}
-
-
-/* Navigation */
 
 .navbar {
-    padding: 0;
+  min-height: 100px;
+  padding: 0;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand img {
+  display: block;
+
+  width: 100px;
+  height: 100px;
+
+  object-fit: contain;
 }
 
 .navbar-nav .nav-item {
-    text-transform: uppercase;
-    font-size: 14px;
+  text-transform: uppercase;
+
+  font-size: 14px;
 }
 
 .navbar-nav .nav-link {
-    padding: 40px 25px !important;
-    color: rgb(255, 255, 255) !important;
+  padding: 40px 25px !important;
+
+  color: rgb(255, 255, 255) !important;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #9ed034 !important;
+  color: rgb(255, 255, 255) !important;
+
+  background-color: #9ed034;
 }
 
 .navbar-nav .active {
-    background: #9ed034;
+  background-color: #9ed034;
 }
 
 .navbar-nav .active .nav-link {
-    color: #fff !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 
-/* Main */
+/* ================================
+   HAMBURGER
+================================ */
+
+.navbar-toggler {
+  margin-right: 15px;
+
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ================================
+   TIME
+================================ */
+
+#timeofday {
+  width: 100%;
+
+  padding: 10px;
+
+  text-align: center;
+
+  background-color: white;
+}
+
+
+/* ================================
+   MAIN
+================================ */
 
 main {
-    padding: 3em 6em 3em 5.5em;
-    margin: 2em 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 3em 0;
+
+  background-color: white;
 }
 
 main h1 {
-    font-size: 2.5em;
-    padding-bottom: 0.5em;
-    color: #9ed034;
+  margin-bottom: 25px;
+
+  color: #9ed034;
+
+  font-size: 2em;
 }
 
 main h2 {
-    font-size: 1.7em;
+  font-size: 1.4em;
 }
 
 
-/* Partners */
+/* ================================
+   HOME
+================================ */
 
-section {
-    width: 100%;
-    background-color: #4288C3;
-}
+.home-box {
+  min-height: 300px;
 
-section #partners {
-    width: 100%;
-    max-width: 1200px;
-    padding: 2em 0;
-    margin: 0 auto;
-    text-align: center;
-    list-style-type: none;
-}
+  padding: 20px;
 
-section #partners .partner {
-    margin: 0;
-    padding: 1em;
-    background-color: transparent;
-}
-
-section #partners .partner img {
-    width: 120px;
-    height: 120px;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 50%;
+  border: 1px solid #dddddd;
 }
 
 
-/* Footer */
+/* ================================
+   CLIFFS
+================================ */
+
+#cliffs-container {
+  margin-top: 30px;
+}
+
+.cliff {
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.cliff h2 {
+  margin: 0;
+
+  padding: 8px;
+
+  background-color: #852b1b;
+
+  color: white;
+
+  font-size: 1.2em;
+}
+
+.cliff img {
+  display: block;
+
+  width: 100%;
+}
+
+
+/* ================================
+   ACTIVITIES TABLE
+================================ */
+
+table {
+  width: 100%;
+
+  margin: 2em auto;
+
+  border-collapse: collapse;
+}
+
+caption {
+  caption-side: top;
+
+  padding: 10px;
+
+  background-color: #852b1b;
+
+  color: white;
+
+  text-align: center;
+
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 10px;
+
+  border: 1px solid #999999;
+
+  text-align: center;
+}
+
+thead {
+  background-color: #4288c3;
+
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e7f3d3;
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #9ed034 !important;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+form {
+  margin-top: 25px;
+}
+
+fieldset {
+  padding: 20px;
+
+  border: 1px solid #9ed034;
+}
+
+legend {
+  width: auto;
+
+  padding: 0 10px;
+
+  color: #4288c3;
+
+  font-size: 1em;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  padding: 5px;
+}
+
+.commentbox textarea {
+  display: block;
+
+  width: 100%;
+  max-width: 500px;
+
+  min-height: 100px;
+
+  margin-top: 5px;
+}
+
+.randomcode {
+  margin-top: 20px;
+}
+
+#codes {
+  display: inline-block;
+
+  margin-left: 10px;
+
+  padding: 10px;
+
+  background-color: #cccccc;
+}
+
+.button {
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.button .btn {
+  padding: 8px 25px;
+
+  font-weight: bold;
+}
+
+.button .fa {
+  margin-right: 5px;
+}
+
+
+/* ================================
+   PARTNERS
+================================ */
+
+#partners-section {
+  width: 100%;
+
+  background-color: #4288c3;
+}
+
+#partners {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 2em 0;
+
+  list-style-type: none;
+
+  text-align: center;
+}
+
+#partners .partner {
+  margin: 0;
+
+  padding: 15px;
+
+  text-align: center;
+}
+
+#partners .partner img {
+  width: 100px;
+  height: 100px;
+
+  padding: 12px;
+
+  object-fit: contain;
+
+  background-color: white;
+
+  border-radius: 50%;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
 
 footer {
-    width: 100%;
-    min-height: 155px;
-    padding-bottom: 1em;
-    background-color: #ecfab8;
+  width: 100%;
+
+  min-height: 155px;
+
+  padding-bottom: 1em;
+
+  background-color: #ecfab8;
+}
+
+footer #nondisclaimer {
+  min-height: 110px;
 }
 
 footer #nondisclaimer .copy {
-    padding: 3.5em 3.5em 3.5em 13em;
-    float: left;
-    font-size: 0.9em;
+  float: left;
+
+  padding: 3.5em 3.5em 3.5em 13em;
+
+  font-size: 0.9em;
 }
 
 footer #nondisclaimer .social {
-    padding: 2.5em;
-    margin-right: 9.25em;
-    float: right;
+  float: right;
+
+  padding: 2.5em;
+
+  margin-right: 9.25em;
 }
 
 footer #disclaimer {
-    clear: both;
+  clear: both;
 }
 
 footer #disclaimer p {
-    font-size: 0.85em;
-    text-align: center;
+  margin: 0;
+
+  padding: 10px;
+
+  text-align: center;
+
+  font-size: 0.85em;
 }
 
 footer #nondisclaimer .social .fa {
-    padding: 15px;
-    font-size: 15px;
-    width: 45px;
-    text-align: center;
-    text-decoration: none;
-    margin: 0 4px;
-    border-radius: 50%;
-}
+  width: 45px;
 
-footer #nondisclaimer .social .fa:hover {
-    opacity: 0.7;
+  padding: 15px;
+
+  margin: 0 4px;
+
+  border-radius: 50%;
+
+  text-align: center;
+
+  text-decoration: none;
 }
 
 footer #nondisclaimer .social .fa-facebook {
-    background: #3B5998;
-    color: white;
+  background-color: #3b5998;
+
+  color: white;
 }
 
 footer #nondisclaimer .social .fa-twitter {
-    background: #55ACEE;
-    color: white;
+  background-color: #55acee;
+
+  color: white;
 }
 
 footer #nondisclaimer .social .fa-instagram {
-    background: #125688;
-    color: white;
+  background-color: #125688;
+
+  color: white;
 }
 
 
-/* Tablet and Mobile */
+/* ================================
+   LARGE BREAKPOINT AND UNDER
 
-@media (max-width: 992px) {
+   navbar-expand-xl:
+   Hamburger appears under 1200px
+================================ */
 
-    .main-header {
-        width: 90%;
-    }
+@media (max-width: 1199.98px) {
 
-    .navbar-brand img {
-        position: relative;
-        bottom: 8px;
-    }
+  .main-header {
+    width: 90%;
+  }
 
-    .navbar-collapse {
-        background-color: rgba(38, 41, 61, 0.9);
-        position: absolute;
-        top: 100px;
-        right: 0;
-        width: 200px;
-        z-index: 10;
-    }
+  .navbar-collapse {
+    position: absolute;
 
-    .navbar-nav .nav-link {
-        padding: 15px 25px !important;
-    }
+    top: 100px;
+    right: 0;
 
-    .navbar-nav .nav-item {
-        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
-    }
+    width: 200px;
 
-    main {
-        padding: 3em 1em;
-        margin: 0;
-    }
+    background-color: rgba(38, 41, 61, 0.9);
+
+    z-index: 1000;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 15px 25px !important;
+  }
+
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+  }
 
 }
 
 
-/* Smaller Screens */
+/* ================================
+   SMALL SCREENS
+================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 
-    footer #nondisclaimer .copy {
-        padding: 3.5em 0 1em 0;
-        text-align: center;
-        float: none;
-        font-size: 0.9em;
-    }
+  .main-header {
+    width: 100%;
+  }
 
-    footer #nondisclaimer .social {
-        padding: 1em 0;
-        margin: 0;
-        text-align: center;
-        float: none;
-    }
+  main {
+    width: 90%;
+
+    padding: 2em 0;
+  }
+
+  .home-box {
+    min-height: auto;
+
+    margin-bottom: 20px;
+  }
+
+  footer #nondisclaimer .copy {
+    float: none;
+
+    padding: 2em 1em 1em;
+
+    text-align: center;
+  }
+
+  footer #nondisclaimer .social {
+    float: none;
+
+    margin: 0;
+
+    padding: 1em;
+
+    text-align: center;
+  }
 
 }
