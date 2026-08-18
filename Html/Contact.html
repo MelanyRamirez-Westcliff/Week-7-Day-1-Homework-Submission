@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="contact" onload="disableButton(true)">
+    <div id="container">
+      <header>
+        <div class="main-header">
+          <div class="logo">
+            <img src="images/logo.png" alt="Great Cliffs Logo" />
+          </div>
+
+          <nav class="main-menu">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="cliffs.html">Cliffs</a>
+              </li>
+
+              <li>
+                <a href="activities.html">Activities</a>
+              </li>
+
+              <li class="active">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <h1>Contacting Us</h1>
+
+        <p>
+          You can drop by the visitors information center at the cliff site that
+          you plan on visiting. They are open 7 days a week from 8.00AM to
+          5.00PM. You can also contact us directly if you need additional
+          information about the Cliffs, Hours of Operations, Facilities or
+          questions about this site using one of the following:
+        </p>
+
+        <p>
+          <strong>Phone:</strong> (800)GCLIFFS<br />
+          <strong>Email:</strong> info@greatcliffs.com
+        </p>
+
+        <form action="/contact" method="post">
+          <fieldset>
+            <legend>Contact Form</legend>
+
+            <label>Name:</label><br />
+            <input type="text" placeholder="Melany R" /><br /><br />
+
+            <label>Email:</label><br />
+            <input type="email" placeholder="melany@gmail.com" /><br /><br />
+
+            <label>Phone:</label><br />
+            <input type="text" placeholder="xxx-xxx-xxxx" /><br /><br />
+
+            <label>How should we contact you?</label>
+
+            <input type="radio" name="contact" checked />
+            <span>Email</span>
+
+            <input type="radio" name="contact" />
+            <span>Phone</span>
+
+            <br /><br />
+
+            <label>Which Cliff are you inquiring?</label><br />
+
+            <select>
+              <option>West Cliff</option>
+              <option>North Cliff</option>
+              <option>East Cliff</option>
+              <option>South Cliff</option>
+            </select>
+
+            <br /><br />
+
+            <div class="commentbox">
+              <label>How did you hear about us:</label>
+              <textarea></textarea>
+            </div>
+
+            <!-- Random Codes -->
+            <div class="randomcode">
+              <input
+                type="text"
+                id="codeentered"
+                name="randomcode"
+                placeholder="Enter characters"
+              />
+
+              <p id="codes"></p>
+            </div>
+
+            <div class="button">
+              <input type="submit" id="submit" value="Inquire" />
+            </div>
+          </fieldset>
+        </form>
+      </main>
+
+      <section>
+        <ul id="partners"></ul>
+      </section>
+
+      <footer>
+        <div id="nondisclaimer">
+          <div class="copy">&copy; Copyright 2020 :: GreatCliffs.com</div>
+
+          <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+        </div>
+
+        <div id="disclaimer">
+          <p>
+            This website is designed and created solely for educational purposes
+            only at Westcliff University. All contents are not intended for any
+            commercial gain or use.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Partners -->
+    <script src="js/site_scripts.js"></script>
+
+    <!-- Random Codes -->
+    <script src="js/randomcodes.js"></script>
+  </body>
+</html>
