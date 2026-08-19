@@ -3,9 +3,15 @@
 <head>
     <title>California Cliffs</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,23 +19,51 @@
 <body id="contact" onLoad="disableButton(true)">
     <div id="container">
 
-        <!-- Header -->
-        <header>
-            <div class="main-header">
-                <div class="logo">
-                    <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-                </div>
+        <!-- Navigation -->
+        <div class="main-header sticky-top">
+            <nav class="navbar navbar-expand-xl navbar-dark">
 
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="cliffs.html">Cliffs</a></li>
-                        <li><a href="activities.html">Activities</a></li>
-                        <li class="active"><a href="contact.html">Contact</a></li>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png"
+                         alt="Great Cliffs Logo">
+                </a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="cliffs.html">Cliffs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="activities.html">Activities</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
                     </ul>
-                </nav>
-            </div>
-        </header>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Header -->
+        <header></header>
 
         <!-- Clock -->
         <section id="timeofday">
@@ -67,20 +101,32 @@
 
                     <div class="textbox">
                         <label>Name:</label>
-                        <input type="text" name="name" placeholder="John Doe">
+                        <input type="text"
+                               name="name"
+                               placeholder="John Doe">
 
                         <label>Email:</label>
-                        <input type="email" name="email" placeholder="johndoe@gmail.com">
+                        <input type="email"
+                               name="email"
+                               placeholder="johndoe@gmail.com">
 
                         <label>Phone:</label>
-                        <input type="text" name="phone" placeholder="xxx-xxx-xxxx">
+                        <input type="text"
+                               name="phone"
+                               placeholder="xxx-xxx-xxxx">
                     </div>
 
                     <div class="radios">
                         <label>How should we contact you?</label>
 
-                        <input type="radio" name="contact" value="email" checked>Email
-                        <input type="radio" name="contact" value="phone">Phone
+                        <input type="radio"
+                               name="contact"
+                               value="email"
+                               checked>Email
+
+                        <input type="radio"
+                               name="contact"
+                               value="phone">Phone
                     </div>
 
                     <div class="selectmenu">
@@ -99,7 +145,7 @@
                         <textarea></textarea>
                     </div>
 
-                    <!-- Code -->
+                    <!-- Random Code -->
                     <div class="randomcode">
                         <input
                             type="text"
@@ -111,8 +157,16 @@
                         <p id="codes"></p>
                     </div>
 
+                    <!-- Bootstrap Submit Button -->
                     <div class="button">
-                        <input type="submit" id="submit" value="Inquire">
+                        <button
+                            type="submit"
+                            id="submit"
+                            class="btn btn-primary"
+                        >
+                            <i class="fa fa-paper-plane"></i>
+                            SEND
+                        </button>
                     </div>
 
                 </fieldset>
@@ -120,8 +174,8 @@
         </main>
 
         <!-- Partners -->
-        <section>
-            <ul id="partners"></ul>
+        <section class="partners-section">
+            <ul id="partners" class="row"></ul>
         </section>
 
         <!-- Footer -->
@@ -149,13 +203,20 @@
 
     </div>
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Clock -->
     <script src="js/digclock.js"></script>
 
     <!-- Partners -->
     <script src="js/site_scripts.js"></script>
 
-    <!-- Code -->
+    <!-- Random Code -->
     <script src="js/randomcodes.js"></script>
+
 </body>
 </html>
