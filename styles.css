@@ -1,548 +1,475 @@
-/* ================================
-   GENERAL
-================================ */
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#container {
-  width: 100%;
-}
-
-
-/* ================================
-   PAGE BACKGROUNDS
-================================ */
-
-#home {
-  background: no-repeat white url("images/cliff_ocean.jpg");
-  background-size: 100% 400px;
-}
-
-#cliffs {
-  background: no-repeat white url("images/cliff_rock.jpg");
-  background-size: 100% 400px;
-}
-
-#activities {
-  background: no-repeat white url("images/runfly.jpg");
-  background-size: 100% 400px;
-}
-
-#contact {
-  background: no-repeat white url("images/forest_cliff.jpg");
-  background-size: 100% 400px;
-}
-
-
-/* ================================
-   HEADER
-================================ */
-
+/* Header */
 header {
-  width: 100%;
-  min-height: 275px;
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
 }
 
+#home header {
+    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background-size: 1500px;
+}
 
-/* ================================
-   NAVIGATION
-================================ */
+#activities header {
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: 1500px;
+}
+
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: 1500px;
+}
 
 .main-header {
-  width: 700px;
-  min-height: 100px;
-  margin: 0 auto;
-
-  background-color: rgba(38, 41, 61, 0.7);
-
-  z-index: 1000;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 705px;
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
 }
 
-.navbar {
-  min-height: 100px;
-  padding: 0;
+.main-header .logo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 2em 0 0;
+    float: left;
 }
 
-.navbar-brand {
-  margin: 0;
-  padding: 0;
+/* Navigation */
+.main-menu {
+    margin-left: 227px;
+    font-weight: 400;
 }
 
-.navbar-brand img {
-  display: block;
-
-  width: 100px;
-  height: 100px;
-
-  object-fit: contain;
+.main-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 1px solid rgb(202, 204, 202, 0.6);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-.navbar-nav .nav-item {
-  text-transform: uppercase;
-
-  font-size: 14px;
+.main-menu ul li a {
+    text-decoration: none;
+    color: #888;
 }
 
-.navbar-nav .nav-link {
-  padding: 40px 25px !important;
-
-  color: rgb(255, 255, 255) !important;
+.main-menu ul li a:hover {
+    color: #9ed034;
 }
 
-.navbar-nav .nav-link:hover {
-  color: rgb(255, 255, 255) !important;
-
-  background-color: #9ed034;
+.main-menu ul li.active {
+    background: #9ed034;
+    border: none;
 }
 
-.navbar-nav .active {
-  background-color: #9ed034;
+.main-menu ul li.active a {
+    color: #fff;
 }
 
-.navbar-nav .active .nav-link {
-  color: rgb(255, 255, 255) !important;
-}
-
-
-/* ================================
-   HAMBURGER
-================================ */
-
-.navbar-toggler {
-  margin-right: 15px;
-
-  border-color: rgba(255, 255, 255, 0.8);
-}
-
-
-/* ================================
-   TIME
-================================ */
-
-#timeofday {
-  width: 100%;
-
-  padding: 10px;
-
-  text-align: center;
-
-  background-color: white;
-}
-
-
-/* ================================
-   MAIN
-================================ */
-
+/* Main */
 main {
-  width: 90%;
-  max-width: 1200px;
-
-  margin: 0 auto;
-
-  padding: 3em 0;
-
-  background-color: white;
+    margin: 100px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main h1 {
-  margin-bottom: 25px;
-
-  color: #9ed034;
-
-  font-size: 2em;
+    color: #9ed034;
+    font-size: 40px;
 }
 
-main h2 {
-  font-size: 1.4em;
+main h3 {
+    font-size: 25px;
 }
 
-
-/* ================================
-   HOME
-================================ */
-
-.home-box {
-  min-height: 300px;
-
-  padding: 20px;
-
-  border: 1px solid #dddddd;
+/* Partners */
+section {
+    width: 100%;
+    background-color: #4288C3;
 }
 
-
-/* ================================
-   CLIFFS
-================================ */
-
-#cliffs-container {
-  margin-top: 30px;
+section #partners {
+    width: 100%;
+    min-width: 1200px;
+    padding: 2em 0 2em 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
 }
 
-.cliff {
-  margin-bottom: 25px;
-
-  text-align: center;
+section #partners .partner {
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
-.cliff h2 {
-  margin: 0;
-
-  padding: 8px;
-
-  background-color: #852b1b;
-
-  color: white;
-
-  font-size: 1.2em;
+section #partners .partner img {
+    width: 90px;
+    height: 90px;
 }
 
-.cliff img {
-  display: block;
-
-  width: 100%;
+/* Footer */
+footer {
+    width: 100%;
+    height: 155px;
+    padding-bottom: 1em;
+    background-color: #ecfab8;
 }
 
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em;
+}
 
-/* ================================
-   ACTIVITIES TABLE
-================================ */
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    margin-right: 9.25em;
+    float: right;
+}
 
+footer #disclaimer {
+    clear: both;
+}
+
+footer #disclaimer p {
+    font-size: 0.85em;
+    text-align: center;
+}
+
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+
+footer #nondisclaimer .social .fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+footer #nondisclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* Activities */
 table {
-  width: 100%;
-
-  margin: 2em auto;
-
-  border-collapse: collapse;
+    width: 1000px;
+    margin: 4em auto 0 auto;
 }
 
 caption {
-  caption-side: top;
+    background: #652B1B;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+}
 
-  padding: 10px;
+thead {
+    background: #BDE1FF;
+}
 
-  background-color: #852b1b;
-
-  color: white;
-
-  text-align: center;
-
-  font-weight: bold;
+tbody {
+    background: #EEFFE6;
+    text-align: center;
 }
 
 th,
 td {
-  padding: 10px;
-
-  border: 1px solid #999999;
-
-  text-align: center;
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B;
 }
 
-thead {
-  background-color: #4288c3;
-
-  color: white;
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #fff;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #e7f3d3;
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
 }
 
-.selectable {
-  cursor: pointer;
+/* Contact */
+.contactinfo .phone,
+.contactinfo .email {
+    padding: 10px 0;
+    margin: 0;
 }
 
-.selected {
-  background-color: #9ed034 !important;
+#contact span:first-child {
+    font-weight: bold;
 }
 
-
-/* ================================
-   CONTACT
-================================ */
-
-form {
-  margin-top: 25px;
+form fieldset {
+    border-color: #9ed034;
+    text-align: left;
 }
 
-fieldset {
-  padding: 20px;
-
-  border: 1px solid #9ed034;
+fieldset div {
+    margin: 20px 0 20px 20px;
 }
 
 legend {
-  width: auto;
+    color: #4977D1;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
-  padding: 0 10px;
+label {
+    font-weight: bold;
+}
 
-  color: #4288c3;
+.textbox label,
+.commentbox label {
+    display: block;
+}
 
-  font-size: 1em;
-
-  font-weight: bold;
-
-  text-transform: uppercase;
+.textbox input {
+    margin-bottom: 20px;
 }
 
 input[type="text"],
 input[type="email"],
-select {
-  padding: 5px;
+textarea {
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
-.commentbox textarea {
-  display: block;
-
-  width: 100%;
-  max-width: 500px;
-
-  min-height: 100px;
-
-  margin-top: 5px;
+.radio input {
+    color: rgb(74, 72, 72);
 }
 
-.randomcode {
-  margin-top: 20px;
-}
-
-#codes {
-  display: inline-block;
-
-  margin-left: 10px;
-
-  padding: 10px;
-
-  background-color: #cccccc;
-}
-
-.button {
-  margin-top: 20px;
-
-  text-align: center;
-}
-
-.button .btn {
-  padding: 8px 25px;
-
-  font-weight: bold;
-}
-
-.button .fa {
-  margin-right: 5px;
-}
-
-
-/* ================================
-   PARTNERS
-================================ */
-
-#partners-section {
-  width: 100%;
-
-  background-color: #4288c3;
-}
-
-#partners {
-  width: 100%;
-  max-width: 1200px;
-
-  margin: 0 auto;
-
-  padding: 2em 0;
-
-  list-style-type: none;
-
-  text-align: center;
-}
-
-#partners .partner {
-  margin: 0;
-
-  padding: 15px;
-
-  text-align: center;
-}
-
-#partners .partner img {
-  width: 100px;
-  height: 100px;
-
-  padding: 12px;
-
-  object-fit: contain;
-
-  background-color: white;
-
-  border-radius: 50%;
-}
-
-
-/* ================================
-   FOOTER
-================================ */
-
-footer {
-  width: 100%;
-
-  min-height: 155px;
-
-  padding-bottom: 1em;
-
-  background-color: #ecfab8;
-}
-
-footer #nondisclaimer {
-  min-height: 110px;
-}
-
-footer #nondisclaimer .copy {
-  float: left;
-
-  padding: 3.5em 3.5em 3.5em 13em;
-
-  font-size: 0.9em;
-}
-
-footer #nondisclaimer .social {
-  float: right;
-
-  padding: 2.5em;
-
-  margin-right: 9.25em;
-}
-
-footer #disclaimer {
-  clear: both;
-}
-
-footer #disclaimer p {
-  margin: 0;
-
-  padding: 10px;
-
-  text-align: center;
-
-  font-size: 0.85em;
-}
-
-footer #nondisclaimer .social .fa {
-  width: 45px;
-
-  padding: 15px;
-
-  margin: 0 4px;
-
-  border-radius: 50%;
-
-  text-align: center;
-
-  text-decoration: none;
-}
-
-footer #nondisclaimer .social .fa-facebook {
-  background-color: #3b5998;
-
-  color: white;
-}
-
-footer #nondisclaimer .social .fa-twitter {
-  background-color: #55acee;
-
-  color: white;
-}
-
-footer #nondisclaimer .social .fa-instagram {
-  background-color: #125688;
-
-  color: white;
-}
-
-
-/* ================================
-   LARGE BREAKPOINT AND UNDER
-
-   navbar-expand-xl:
-   Hamburger appears under 1200px
-================================ */
-
-@media (max-width: 1199.98px) {
-
-  .main-header {
-    width: 90%;
-  }
-
-  .navbar-collapse {
-    position: absolute;
-
-    top: 100px;
-    right: 0;
-
+.selectmenu select {
     width: 200px;
+    text-align: center;
+}
 
-    background-color: rgba(38, 41, 61, 0.9);
+textarea {
+    height: 200px;
+}
 
-    z-index: 1000;
-  }
+.button input {
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    margin-left: 400px;
+    /* background-color: #4977D1; */
+}
 
-  .navbar-nav .nav-link {
-    padding: 15px 25px !important;
-  }
+/* Random code */
+.randomcode input {
+    width: 150px;
+}
 
-  .navbar-nav .nav-item {
-    border-bottom: 1px solid rgba(202, 204, 202, 0.6);
-  }
+.randomcode #codes {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+/* Cliffs */
+
+main .cliffs {
+    width: 850px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 25px;
+    justify-content: center;
+}
+
+.img-container {
+    width: 400px;
+    margin: 0;
+}
+
+.image-caption {
+    width: 400px;
+    background-color: #652B1B;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cliff-image {
+    display: block;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Clock */
+#timeofday {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+    background: rgba(251, 215, 139, 1);
+    background: linear-gradient(
+        0deg,
+        rgba(251, 215, 139, 1) 0%,
+        rgba(118, 213, 245, 1) 100%
+    );
+    padding: 20px 0;
+}
+
+#clock {
+    color: #125688;
+}
+
+/* Lightbox */
+
+.lightbox-toggle {
+    color: black;
+}
+
+.backdrop {
+    z-index: 1;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.box {
+    z-index: 2;
+    position: fixed;
+    opacity: 1;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #444444;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.box img {
+    width: 100%;
+    margin: 0;
+}
+
+/* Activity selection */
+
+#activities tbody td:not(:first-child) {
+
+    cursor: pointer;
 
 }
 
+#activities tbody td.tdhighlight {
 
-/* ================================
-   SMALL SCREENS
-================================ */
+    background-color: #9ed034;
 
-@media (max-width: 767.98px) {
+    color: white;
 
-  .main-header {
-    width: 100%;
-  }
+    font-weight: bold;
 
-  main {
-    width: 90%;
+}
 
-    padding: 2em 0;
-  }
+/* Selected activities box */
 
-  .home-box {
-    min-height: auto;
+#activities main #displaySelected {
 
-    margin-bottom: 20px;
-  }
+    visibility: hidden;
 
-  footer #nondisclaimer .copy {
-    float: none;
+    margin: 0 auto;
 
-    padding: 2em 1em 1em;
+    width: 600px;
 
-    text-align: center;
-  }
+    border: 2px solid #9ed034;
 
-  footer #nondisclaimer .social {
-    float: none;
+    padding: 0.75em;
+
+}
+
+#activities main #displaySelected #result,
+#activities main #displaySelected #sendinfo {
+
+    display: inline-block;
 
     margin: 0;
 
-    padding: 1em;
+}
 
-    text-align: center;
-  }
+#activities main #result {
+
+    min-height: 50px;
+
+    width: 300px;
+
+    padding: 0;
+
+}
+
+#activities main #result h4 {
+
+    margin-bottom: 1em;
+
+    font-size: 1.15em;
+
+}
+
+#activities main #result p {
+
+    margin: 5px 0;
+
+}
+
+#activities main #displaySelected #sendinfo input[type="email"] {
+
+    width: 200px;
 
 }

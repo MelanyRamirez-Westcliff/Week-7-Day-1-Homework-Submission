@@ -1,0 +1,22 @@
+/* Partners */
+
+var logos = [];
+var fileNames = [];
+var imgList = [];
+var image;
+
+var openList = "<li class='partner'>";
+var closeList = "</li>";
+
+for (var i = 0; i < 6; i++) {
+    fileNames.push("partner" + (i + 1) + ".png");
+
+    logos.push(
+        "<img src='images/partners/" + fileNames[i] + "'>"
+    );
+
+    image = openList + logos[i] + closeList;
+    imgList.push(image);
+}
+
+document.getElementById("partners").innerHTML = imgList.join("");
